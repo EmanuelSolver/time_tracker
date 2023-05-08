@@ -1,0 +1,61 @@
+.parent{
+    display: grid;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    background-color: hsl(226, 43%, 10%);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid:  auto auto auto;
+    color: aliceblue;
+}
+.parent>div{
+    background-color: rgb(251, 252, 253);
+}
+p{
+    font-size: 18px;
+    font-family: cursive;
+}
+
+
+.item1{
+    background-color: hsl(235, 46%, 20%);
+    float: left;
+}
+
+.item2{
+    
+    background-image: url("images\\icon-work.svg");
+}
+.item3{
+    background-image: url("images\\icon-play.svg");
+}
+.item4{
+    background-image: url("images\\icon-study.svg");
+}
+.item5{
+    background-image: url("images\\icon-exercise.svg");
+}
+.item6{
+    background-image: url("images\\icon-social.svg");
+}
+.item7{
+    background-image: url("images\\icon-self-care.svg");
+}
+.textpart{
+    position: relative;
+    top: 25%;
+    border-radius: 8%;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+    background-color: rgb(6, 145, 192);
+    }
+    .parent{
+        display: grid;
+        align-items: end;
+    }
+}    
