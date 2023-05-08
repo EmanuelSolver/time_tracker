@@ -1,16 +1,19 @@
 .parent{
     display: grid;
     position: absolute;
-    width: 80%;
+    
     left: 10%;
     background-color: hsl(226, 43%, 10%);
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
     row-gap: 20px;
+    width: 80%;
     column-gap: 20px;
-    grid:  auto auto auto;
     color: aliceblue;
 }
+
 .parent>div{
     background-color: rgb(251, 252, 253);
 }
@@ -19,10 +22,8 @@ p{
     font-family: cursive;
 }
 
-
-.item1{
-    background-color: hsl(235, 46%, 20%);
-    float: left;
+.textpart{
+    border-radius: 10%;
 }
 
 .item2{
@@ -44,18 +45,14 @@ p{
 .item7{
     background-image: url("images\\icon-self-care.svg");
 }
-.textpart{
-    position: relative;
-    top: 25%;
-    border-radius: 8%;
-}
 
-@media only screen and (min-width: 375px) {
+
+@media only screen and (max-width: 375px) {
     body {
-    background-color: rgb(6, 145, 192);
+    background-color: rgb(2, 34, 49);
     }
     .parent{
-        display: grid;
-        align-items: end;
+        display: block;
     }
+   
 }    
